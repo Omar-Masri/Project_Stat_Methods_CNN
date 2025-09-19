@@ -6,7 +6,6 @@
 ** Imports
 
 #+BEGIN_SRC jupyter-python
-
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -25,14 +24,12 @@ from torchvision import datasets, transforms
 from torchvision.transforms import InterpolationMode
 import torchvision.utils as vutils
 from torchview import draw_graph
-
 #+END_SRC
 
 #+RESULTS:
 
 ** Constants
 #+BEGIN_SRC jupyter-python
-
 DEBUG = True
 RESET = False
 
@@ -41,14 +38,12 @@ RANDOM_SEED = 23                # mj
 K = 5
 STYLE_TOGGLE = True
 TUNING_TOGGLE = False
-
 #+END_SRC
 
 #+RESULTS:
 
 ** Style
 #+BEGIN_SRC jupyter-python
-
 if STYLE_TOGGLE:                        # Dark used to visualize in Emacs
 	sns.set_theme(style="darkgrid")
 
@@ -79,14 +74,12 @@ else:                                   # Light used for report
 		"grid.color": "#262626",
 		"lines.linewidth": 2,
 	})
-
 #+END_SRC
 
 #+RESULTS:
 
 ** Info & Reproducibility
 #+BEGIN_SRC jupyter-python
-
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Currently using: {device}")
 
@@ -113,7 +106,6 @@ std = (diff / num_pixels).sqrt()
 
 print("Dataset mean:", mean)
 print("Dataset std:", std)
-
 #+END_SRC
 
 #+RESULTS:
@@ -126,7 +118,6 @@ print("Dataset std:", std)
 ** Transform
 
 #+BEGIN_SRC jupyter-python
-
 transform = transforms.Compose([
     transforms.Resize((IMG_H, IMG_W)
                     , interpolation=InterpolationMode.BICUBIC),         # Image Resizing using bicubic interpolation
@@ -147,7 +138,6 @@ transform = transforms.Compose([
 ** Architectures
 
 #+BEGIN_SRC jupyter-python
-
 class CNN_First(nn.Module):
     def __init__(self):
         super().__init__()
@@ -315,7 +305,6 @@ class CNN_Fourth(nn.Module):
         x = self.dropout(x)
         x = self.ln3(x)
         return x
-
 #+END_SRC
 
 #+RESULTS:
@@ -323,7 +312,6 @@ class CNN_Fourth(nn.Module):
 * Training
 
 #+BEGIN_SRC jupyter-python
-
 dataset = datasets.ImageFolder(root="archive", transform=transform)
 
 train_idx, test_idx = train_test_split(
@@ -616,7 +604,6 @@ print(f"Precision: {precision_macro:.4f}")
 print(f"Recall:    {recall_macro:.4f}")
 print(f"F1:        {f1_macro:.4f}")
 print(f"Accuracy:  {accuracy:.4f}")
-
 #+END_SRC
 
 #+RESULTS:
@@ -634,7 +621,6 @@ print(f"Accuracy:  {accuracy:.4f}")
 ** Generalization
 
 #+BEGIN_SRC jupyter-python
-
 data_dir = "Generalize_Hands"
 
 transformGen = transforms.Compose([
@@ -688,16 +674,13 @@ plt.figure(figsize=(10, 10))
 disp.plot(cmap=plt.cm.Blues, xticks_rotation=45, values_format='d')
 plt.title("Confusion Matrix")
 plt.show()
-
 #+END_SRC
 
 ** Plot Architectures
 
 #+BEGIN_SRC jupyter-python
-
 model_graph = draw_graph(CNN_Fourth(), input_size=(1,3,256,256))
 model_graph.visual_graph
-
 #+END_SRC
 
 * Reset
