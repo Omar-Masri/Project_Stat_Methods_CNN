@@ -1,0 +1,264 @@
+* Hyperparameter tuning Results
+
+** Folds
+
+: Testing: lr=0.001, batch_size=16, epochs=10
+:   Fold 1 | Loss: 1.1004, Precision: 0.1048, Recall: 0.3333, F1: 0.1595, Accuracy: 0.3145
+:   Fold 2 | Loss: 1.0985, Precision: 0.1183, Recall: 0.3333, F1: 0.1746, Accuracy: 0.3548
+:   Fold 3 | Loss: 0.1415, Precision: 0.9571, Recall: 0.9569, F1: 0.9569, Accuracy: 0.9570
+:   Fold 4 | Loss: 0.0963, Precision: 0.9724, Recall: 0.9697, F1: 0.9708, Accuracy: 0.9704
+:   Fold 5 | Loss: 0.2226, Precision: 0.9146, Recall: 0.9150, F1: 0.9138, Accuracy: 0.9137
+:   Average CV | Loss: 0.5319, Precision: 0.6134, F1: 0.6351, Accuracy: 0.7021, Recall: 0.7016
+:
+[[file:./images/6893fbb9b59706bd3cfd26f25e3c6ca2a00a041d.png]]
+: Testing: lr=0.001, batch_size=16, epochs=20
+:   Fold 1 | Loss: 0.3153, Precision: 0.9281, Recall: 0.9158, F1: 0.9180, Accuracy: 0.9167
+:   Fold 2 | Loss: 0.1510, Precision: 0.9506, Recall: 0.9378, F1: 0.9409, Accuracy: 0.9435
+:   Fold 3 | Loss: 0.1618, Precision: 0.9449, Recall: 0.9403, F1: 0.9405, Accuracy: 0.9409
+:   Fold 4 | Loss: 1.0998, Precision: 0.0977, Recall: 0.3333, F1: 0.1511, Accuracy: 0.2930
+:   Fold 5 | Loss: 0.0918, Precision: 0.9682, Recall: 0.9676, F1: 0.9678, Accuracy: 0.9677
+:   Average CV | Loss: 0.3640, Precision: 0.7779, F1: 0.7837, Accuracy: 0.8123, Recall: 0.8190
+:
+[[file:./images/da0dfcdae9b1c71906add4520e9342627cd6de0f.png]]
+: Testing: lr=0.001, batch_size=16, epochs=30
+:   Fold 1 | Loss: 0.0984, Precision: 0.9715, Recall: 0.9708, F1: 0.9708, Accuracy: 0.9704
+:   Fold 2 | Loss: 1.0986, Precision: 0.1183, Recall: 0.3333, F1: 0.1746, Accuracy: 0.3548
+:   Fold 3 | Loss: 0.1033, Precision: 0.9665, Recall: 0.9646, F1: 0.9648, Accuracy: 0.9651
+:   Fold 4 | Loss: 0.0482, Precision: 0.9840, Recall: 0.9837, F1: 0.9839, Accuracy: 0.9839
+:   Fold 5 | Loss: 0.0978, Precision: 0.9736, Recall: 0.9727, F1: 0.9731, Accuracy: 0.9730
+:   Average CV | Loss: 0.2893, Precision: 0.8028, F1: 0.8134, Accuracy: 0.8494, Recall: 0.8450
+:
+[[file:./images/e963a308ccabd2b7f8cb00a746f5f7ce58e74eea.png]]
+: Testing: lr=0.001, batch_size=32, epochs=10
+:   Fold 1 | Loss: 0.4465, Precision: 0.8590, Recall: 0.8577, F1: 0.8576, Accuracy: 0.8575
+:   Fold 2 | Loss: 0.2123, Precision: 0.9357, Recall: 0.9324, F1: 0.9333, Accuracy: 0.9328
+:   Fold 3 | Loss: 0.2133, Precision: 0.9166, Recall: 0.9167, F1: 0.9165, Accuracy: 0.9167
+:   Fold 4 | Loss: 1.0997, Precision: 0.0977, Recall: 0.3333, F1: 0.1511, Accuracy: 0.2930
+:   Fold 5 | Loss: 0.1272, Precision: 0.9543, Recall: 0.9538, F1: 0.9540, Accuracy: 0.9542
+:   Average CV | Loss: 0.4198, Precision: 0.7526, F1: 0.7625, Accuracy: 0.7908, Recall: 0.7988
+:
+[[file:./images/11acfb920a9ff114b1d623ae0a612b54fd515024.png]]
+: Testing: lr=0.001, batch_size=32, epochs=20
+:   Fold 1 | Loss: 0.1311, Precision: 0.9667, Recall: 0.9641, F1: 0.9649, Accuracy: 0.9651
+:   Fold 2 | Loss: 0.1311, Precision: 0.9700, Recall: 0.9715, F1: 0.9706, Accuracy: 0.9704
+:   Fold 3 | Loss: 0.0760, Precision: 0.9689, Recall: 0.9671, F1: 0.9677, Accuracy: 0.9677
+:   Fold 4 | Loss: 1.0998, Precision: 0.0977, Recall: 0.3333, F1: 0.1511, Accuracy: 0.2930
+:   Fold 5 | Loss: 1.0983, Precision: 0.1168, Recall: 0.3333, F1: 0.1730, Accuracy: 0.3504
+:   Average CV | Loss: 0.5073, Precision: 0.6240, F1: 0.6454, Accuracy: 0.7093, Recall: 0.7139
+:
+[[file:./images/16dd4b9515a1d4fe7ccb9397f62cdfbe830c508d.png]]
+: Testing: lr=0.001, batch_size=32, epochs=30
+:   Fold 1 | Loss: 0.1683, Precision: 0.9730, Recall: 0.9732, F1: 0.9729, Accuracy: 0.9731
+:   Fold 2 | Loss: 0.1554, Precision: 0.9604, Recall: 0.9616, F1: 0.9597, Accuracy: 0.9597
+:   Fold 3 | Loss: 0.1022, Precision: 0.9671, Recall: 0.9661, F1: 0.9654, Accuracy: 0.9651
+:   Fold 4 | Loss: 1.0996, Precision: 0.0977, Recall: 0.3333, F1: 0.1511, Accuracy: 0.2930
+:   Fold 5 | Loss: 1.0982, Precision: 0.1168, Recall: 0.3333, F1: 0.1730, Accuracy: 0.3504
+:   Average CV | Loss: 0.5247, Precision: 0.6230, F1: 0.6444, Accuracy: 0.7083, Recall: 0.7135
+:
+[[file:./images/65ec6fe72cf9862b20f57a7cde933278638d64d2.png]]
+: Testing: lr=0.001, batch_size=64, epochs=10
+:   Fold 1 | Loss: 0.5238, Precision: 0.8111, Recall: 0.8058, F1: 0.8066, Accuracy: 0.8065
+:   Fold 2 | Loss: 0.3396, Precision: 0.8732, Recall: 0.8607, F1: 0.8648, Accuracy: 0.8602
+:   Fold 3 | Loss: 0.2440, Precision: 0.9122, Recall: 0.9116, F1: 0.9118, Accuracy: 0.9113
+:   Fold 4 | Loss: 1.0996, Precision: 0.0977, Recall: 0.3333, F1: 0.1511, Accuracy: 0.2930
+:   Fold 5 | Loss: 0.3975, Precision: 0.8699, Recall: 0.8583, F1: 0.8611, Accuracy: 0.8598
+:   Average CV | Loss: 0.5209, Precision: 0.7128, F1: 0.7190, Accuracy: 0.7462, Recall: 0.7540
+:
+[[file:./images/77085877b68156e7de9909bc9c8e5388ac9ac419.png]]
+: Testing: lr=0.001, batch_size=64, epochs=20
+:   Fold 1 | Loss: 0.2695, Precision: 0.9117, Recall: 0.9074, F1: 0.9064, Accuracy: 0.9059
+:   Fold 2 | Loss: 0.1430, Precision: 0.9620, Recall: 0.9598, F1: 0.9606, Accuracy: 0.9597
+:   Fold 3 | Loss: 0.1514, Precision: 0.9410, Recall: 0.9397, F1: 0.9381, Accuracy: 0.9382
+:   Fold 4 | Loss: 0.4001, Precision: 0.8613, Recall: 0.8620, F1: 0.8596, Accuracy: 0.8602
+:   Fold 5 | Loss: 0.1437, Precision: 0.9559, Recall: 0.9541, F1: 0.9541, Accuracy: 0.9542
+:   Average CV | Loss: 0.2215, Precision: 0.9264, F1: 0.9238, Accuracy: 0.9236, Recall: 0.9246
+:
+[[file:./images/c9b3c803c7d1fe9dad28127a437783cd602357ce.png]]
+: Testing: lr=0.001, batch_size=64, epochs=30
+:   Fold 1 | Loss: 0.1533, Precision: 0.9516, Recall: 0.9515, F1: 0.9513, Accuracy: 0.9516
+:   Fold 2 | Loss: 1.0988, Precision: 0.1183, Recall: 0.3333, F1: 0.1746, Accuracy: 0.3548
+:   Fold 3 | Loss: 1.0991, Precision: 0.1084, Recall: 0.3333, F1: 0.1636, Accuracy: 0.3253
+:   Fold 4 | Loss: 0.1059, Precision: 0.9700, Recall: 0.9713, F1: 0.9706, Accuracy: 0.9704
+:   Fold 5 | Loss: 0.1540, Precision: 0.9497, Recall: 0.9487, F1: 0.9488, Accuracy: 0.9488
+:   Average CV | Loss: 0.5222, Precision: 0.6196, F1: 0.6418, Accuracy: 0.7102, Recall: 0.7076
+:
+[[file:./images/7b1f7322e79b147da700ef3f9390c5d7c7425111.png]]
+: Testing: lr=0.0005, batch_size=16, epochs=10
+:   Fold 1 | Loss: 0.1966, Precision: 0.9308, Recall: 0.9304, F1: 0.9301, Accuracy: 0.9301
+:   Fold 2 | Loss: 0.1040, Precision: 0.9652, Recall: 0.9605, F1: 0.9622, Accuracy: 0.9624
+:   Fold 3 | Loss: 0.1393, Precision: 0.9600, Recall: 0.9602, F1: 0.9599, Accuracy: 0.9597
+:   Fold 4 | Loss: 0.1480, Precision: 0.9462, Recall: 0.9497, F1: 0.9463, Accuracy: 0.9462
+:   Fold 5 | Loss: 0.1765, Precision: 0.9474, Recall: 0.9423, F1: 0.9437, Accuracy: 0.9434
+:   Average CV | Loss: 0.1529, Precision: 0.9499, F1: 0.9484, Accuracy: 0.9484, Recall: 0.9486
+:
+[[file:./images/85cd353b4a3e99319cb54d3047d6215bb0efcdcd.png]]
+: Testing: lr=0.0005, batch_size=16, epochs=20
+:   Fold 1 | Loss: 0.0888, Precision: 0.9677, Recall: 0.9682, F1: 0.9679, Accuracy: 0.9677
+:   Fold 2 | Loss: 0.1106, Precision: 0.9697, Recall: 0.9651, F1: 0.9668, Accuracy: 0.9677
+:   Fold 3 | Loss: 0.0962, Precision: 0.9685, Recall: 0.9675, F1: 0.9678, Accuracy: 0.9677
+:   Fold 4 | Loss: 0.0878, Precision: 0.9830, Recall: 0.9811, F1: 0.9817, Accuracy: 0.9812
+:   Fold 5 | Loss: 0.1267, Precision: 0.9633, Recall: 0.9635, F1: 0.9624, Accuracy: 0.9623
+:   Average CV | Loss: 0.1020, Precision: 0.9705, F1: 0.9693, Accuracy: 0.9693, Recall: 0.9691
+:
+[[file:./images/6cf366693484425303184c2ae88766bc5d537c97.png]]
+: Testing: lr=0.0005, batch_size=16, epochs=30
+:   Fold 1 | Loss: 0.1500, Precision: 0.9595, Recall: 0.9599, F1: 0.9595, Accuracy: 0.9597
+:   Fold 2 | Loss: 0.1422, Precision: 0.9666, Recall: 0.9680, F1: 0.9672, Accuracy: 0.9677
+:   Fold 3 | Loss: 0.1615, Precision: 0.9559, Recall: 0.9504, F1: 0.9514, Accuracy: 0.9516
+:   Fold 4 | Loss: 0.0402, Precision: 0.9861, Recall: 0.9870, F1: 0.9865, Accuracy: 0.9866
+:   Fold 5 | Loss: 0.0693, Precision: 0.9681, Recall: 0.9682, F1: 0.9678, Accuracy: 0.9677
+:   Average CV | Loss: 0.1126, Precision: 0.9672, F1: 0.9665, Accuracy: 0.9666, Recall: 0.9667
+:
+[[file:./images/60548fde583121118a367887def9f672b1e8c208.png]]
+: Testing: lr=0.0005, batch_size=32, epochs=10
+:   Fold 1 | Loss: 0.3001, Precision: 0.9024, Recall: 0.8968, F1: 0.8976, Accuracy: 0.8978
+:   Fold 2 | Loss: 0.1181, Precision: 0.9650, Recall: 0.9600, F1: 0.9618, Accuracy: 0.9624
+:   Fold 3 | Loss: 0.2033, Precision: 0.9329, Recall: 0.9305, F1: 0.9304, Accuracy: 0.9301
+:   Fold 4 | Loss: 0.1387, Precision: 0.9556, Recall: 0.9586, F1: 0.9565, Accuracy: 0.9570
+:   Fold 5 | Loss: 0.2710, Precision: 0.9208, Recall: 0.9150, F1: 0.9148, Accuracy: 0.9137
+:   Average CV | Loss: 0.2062, Precision: 0.9353, F1: 0.9322, Accuracy: 0.9322, Recall: 0.9322
+:
+[[file:./images/b16b88c18f92599cfad9bde6e5ef548d2ebefcd9.png]]
+: Testing: lr=0.0005, batch_size=32, epochs=20
+:   Fold 1 | Loss: 0.2715, Precision: 0.9325, Recall: 0.9307, F1: 0.9295, Accuracy: 0.9301
+:   Fold 2 | Loss: 0.1281, Precision: 0.9706, Recall: 0.9674, F1: 0.9684, Accuracy: 0.9677
+:   Fold 3 | Loss: 0.0974, Precision: 0.9605, Recall: 0.9594, F1: 0.9597, Accuracy: 0.9597
+:   Fold 4 | Loss: 0.0745, Precision: 0.9824, Recall: 0.9796, F1: 0.9808, Accuracy: 0.9812
+:   Fold 5 | Loss: 0.1259, Precision: 0.9682, Recall: 0.9678, F1: 0.9677, Accuracy: 0.9677
+:   Average CV | Loss: 0.1395, Precision: 0.9628, F1: 0.9612, Accuracy: 0.9613, Recall: 0.9610
+:
+[[file:./images/28a5becf472f027837f18635334f497b5cf22462.png]]
+: Testing: lr=0.0005, batch_size=32, epochs=30
+:   Fold 1 | Loss: 0.1063, Precision: 0.9732, Recall: 0.9729, F1: 0.9730, Accuracy: 0.9731
+:   Fold 2 | Loss: 0.0816, Precision: 0.9838, Recall: 0.9843, F1: 0.9840, Accuracy: 0.9839
+:   Fold 3 | Loss: 0.1305, Precision: 0.9595, Recall: 0.9559, F1: 0.9560, Accuracy: 0.9570
+:   Fold 4 | Loss: 0.0441, Precision: 0.9833, Recall: 0.9846, F1: 0.9838, Accuracy: 0.9839
+:   Fold 5 | Loss: 0.0800, Precision: 0.9630, Recall: 0.9623, F1: 0.9625, Accuracy: 0.9623
+:   Average CV | Loss: 0.0885, Precision: 0.9725, F1: 0.9719, Accuracy: 0.9720, Recall: 0.9720
+:
+[[file:./images/43e3b1df00cd6403aa6ecc79118f149ecb52a7a7.png]]
+: Testing: lr=0.0005, batch_size=64, epochs=10
+:   Fold 1 | Loss: 0.2758, Precision: 0.9056, Recall: 0.9044, F1: 0.9035, Accuracy: 0.9032
+:   Fold 2 | Loss: 0.3550, Precision: 0.8978, Recall: 0.8757, F1: 0.8803, Accuracy: 0.8817
+:   Fold 3 | Loss: 0.2702, Precision: 0.9064, Recall: 0.9002, F1: 0.8999, Accuracy: 0.9005
+:   Fold 4 | Loss: 0.2697, Precision: 0.9055, Recall: 0.9057, F1: 0.9054, Accuracy: 0.9059
+:   Fold 5 | Loss: 0.2910, Precision: 0.8959, Recall: 0.8942, F1: 0.8927, Accuracy: 0.8922
+:   Average CV | Loss: 0.2924, Precision: 0.9023, F1: 0.8964, Accuracy: 0.8967, Recall: 0.8960
+:
+[[file:./images/632ad264b8489a80a9a1187b8277972a9cc5ebe1.png]]
+: Testing: lr=0.0005, batch_size=64, epochs=20
+:   Fold 1 | Loss: 0.1294, Precision: 0.9574, Recall: 0.9565, F1: 0.9568, Accuracy: 0.9570
+:   Fold 2 | Loss: 0.1150, Precision: 0.9540, Recall: 0.9554, F1: 0.9543, Accuracy: 0.9543
+:   Fold 3 | Loss: 0.1024, Precision: 0.9789, Recall: 0.9783, F1: 0.9784, Accuracy: 0.9785
+:   Fold 4 | Loss: 0.0956, Precision: 0.9691, Recall: 0.9718, F1: 0.9700, Accuracy: 0.9704
+:   Fold 5 | Loss: 0.0965, Precision: 0.9692, Recall: 0.9673, F1: 0.9677, Accuracy: 0.9677
+:   Average CV | Loss: 0.1078, Precision: 0.9657, F1: 0.9654, Accuracy: 0.9656, Recall: 0.9659
+:
+[[file:./images/e953d7c3224952511bfa627c20f2a0c86a786d91.png]]
+: Testing: lr=0.0005, batch_size=64, epochs=30
+:   Fold 1 | Loss: 0.1069, Precision: 0.9838, Recall: 0.9838, F1: 0.9838, Accuracy: 0.9839
+:   Fold 2 | Loss: 0.0959, Precision: 0.9712, Recall: 0.9710, F1: 0.9709, Accuracy: 0.9704
+:   Fold 3 | Loss: 0.0448, Precision: 0.9843, Recall: 0.9839, F1: 0.9841, Accuracy: 0.9839
+:   Fold 4 | Loss: 0.1290, Precision: 0.9597, Recall: 0.9605, F1: 0.9582, Accuracy: 0.9597
+:   Fold 5 | Loss: 0.0813, Precision: 0.9787, Recall: 0.9785, F1: 0.9786, Accuracy: 0.9784
+:   Average CV | Loss: 0.0916, Precision: 0.9756, F1: 0.9751, Accuracy: 0.9753, Recall: 0.9755
+:
+[[file:./images/a390a998bd3685d526c4806c4401fba124af9f21.png]]
+: Testing: lr=0.0001, batch_size=16, epochs=10
+:   Fold 1 | Loss: 0.2568, Precision: 0.9265, Recall: 0.9255, F1: 0.9247, Accuracy: 0.9247
+:   Fold 2 | Loss: 0.1422, Precision: 0.9356, Recall: 0.9359, F1: 0.9352, Accuracy: 0.9355
+:   Fold 3 | Loss: 0.1913, Precision: 0.9377, Recall: 0.9315, F1: 0.9323, Accuracy: 0.9328
+:   Fold 4 | Loss: 0.1109, Precision: 0.9675, Recall: 0.9689, F1: 0.9681, Accuracy: 0.9677
+:   Fold 5 | Loss: 0.2045, Precision: 0.9346, Recall: 0.9304, F1: 0.9305, Accuracy: 0.9299
+:   Average CV | Loss: 0.1811, Precision: 0.9404, F1: 0.9382, Accuracy: 0.9381, Recall: 0.9385
+:
+[[file:./images/d607c01c2b3fdb080ced338d2d387588f3699bc2.png]]
+: Testing: lr=0.0001, batch_size=16, epochs=20
+:   Fold 1 | Loss: 0.1231, Precision: 0.9677, Recall: 0.9679, F1: 0.9678, Accuracy: 0.9677
+:   Fold 2 | Loss: 0.0869, Precision: 0.9705, Recall: 0.9665, F1: 0.9679, Accuracy: 0.9677
+:   Fold 3 | Loss: 0.1102, Precision: 0.9599, Recall: 0.9559, F1: 0.9566, Accuracy: 0.9570
+:   Fold 4 | Loss: 0.1844, Precision: 0.9502, Recall: 0.9504, F1: 0.9478, Accuracy: 0.9489
+:   Fold 5 | Loss: 0.0730, Precision: 0.9866, Recall: 0.9864, F1: 0.9865, Accuracy: 0.9865
+:   Average CV | Loss: 0.1155, Precision: 0.9670, F1: 0.9653, Accuracy: 0.9656, Recall: 0.9654
+:
+[[file:./images/08b3c07e9dba3cf5f632d56246425f2f8fc471ba.png]]
+: Testing: lr=0.0001, batch_size=16, epochs=30
+:   Fold 1 | Loss: 0.1345, Precision: 0.9810, Recall: 0.9812, F1: 0.9811, Accuracy: 0.9812
+:   Fold 2 | Loss: 0.0643, Precision: 0.9824, Recall: 0.9816, F1: 0.9818, Accuracy: 0.9812
+:   Fold 3 | Loss: 0.0604, Precision: 0.9787, Recall: 0.9787, F1: 0.9785, Accuracy: 0.9785
+:   Fold 4 | Loss: 0.0468, Precision: 0.9946, Recall: 0.9947, F1: 0.9946, Accuracy: 0.9946
+:   Fold 5 | Loss: 0.0696, Precision: 0.9838, Recall: 0.9838, F1: 0.9838, Accuracy: 0.9838
+:   Average CV | Loss: 0.0751, Precision: 0.9841, F1: 0.9840, Accuracy: 0.9839, Recall: 0.9840
+:
+[[file:./images/d792e42c06891ef9467fe0c88fa53fafae0146b6.png]]
+: Testing: lr=0.0001, batch_size=32, epochs=10
+:   Fold 1 | Loss: 0.3498, Precision: 0.8803, Recall: 0.8647, F1: 0.8656, Accuracy: 0.8683
+:   Fold 2 | Loss: 0.2455, Precision: 0.9093, Recall: 0.9123, F1: 0.9083, Accuracy: 0.9086
+:   Fold 3 | Loss: 0.2762, Precision: 0.9233, Recall: 0.9118, F1: 0.9126, Accuracy: 0.9140
+:   Fold 4 | Loss: 0.1531, Precision: 0.9595, Recall: 0.9618, F1: 0.9595, Accuracy: 0.9597
+:   Fold 5 | Loss: 0.3039, Precision: 0.9045, Recall: 0.8928, F1: 0.8921, Accuracy: 0.8922
+:   Average CV | Loss: 0.2657, Precision: 0.9154, F1: 0.9076, Accuracy: 0.9085, Recall: 0.9087
+:
+[[file:./images/3ff084e8c28b1dedafd64e5ed3d08df2644f3456.png]]
+: Testing: lr=0.0001, batch_size=32, epochs=20
+:   Fold 1 | Loss: 0.2031, Precision: 0.9519, Recall: 0.9524, F1: 0.9515, Accuracy: 0.9516
+:   Fold 2 | Loss: 0.1235, Precision: 0.9613, Recall: 0.9553, F1: 0.9572, Accuracy: 0.9570
+:   Fold 3 | Loss: 0.1031, Precision: 0.9663, Recall: 0.9646, F1: 0.9649, Accuracy: 0.9651
+:   Fold 4 | Loss: 0.1361, Precision: 0.9386, Recall: 0.9388, F1: 0.9383, Accuracy: 0.9382
+:   Fold 5 | Loss: 0.1308, Precision: 0.9482, Recall: 0.9457, F1: 0.9465, Accuracy: 0.9461
+:   Average CV | Loss: 0.1393, Precision: 0.9533, F1: 0.9517, Accuracy: 0.9516, Recall: 0.9514
+:
+[[file:./images/dacc9df2a84e0a2c149490145cd077dad67f4969.png]]
+: Testing: lr=0.0001, batch_size=32, epochs=30
+:   Fold 1 | Loss: 0.1194, Precision: 0.9787, Recall: 0.9786, F1: 0.9786, Accuracy: 0.9785
+:   Fold 2 | Loss: 0.1047, Precision: 0.9735, Recall: 0.9731, F1: 0.9732, Accuracy: 0.9731
+:   Fold 3 | Loss: 0.0750, Precision: 0.9714, Recall: 0.9703, F1: 0.9707, Accuracy: 0.9704
+:   Fold 4 | Loss: 0.0994, Precision: 0.9662, Recall: 0.9683, F1: 0.9669, Accuracy: 0.9677
+:   Fold 5 | Loss: 0.1181, Precision: 0.9558, Recall: 0.9552, F1: 0.9546, Accuracy: 0.9542
+:   Average CV | Loss: 0.1033, Precision: 0.9691, F1: 0.9688, Accuracy: 0.9688, Recall: 0.9691
+:
+[[file:./images/42c7738f9b7b91840fceb970665f02886e8cb743.png]]
+: Testing: lr=0.0001, batch_size=64, epochs=10
+:   Fold 1 | Loss: 0.4448, Precision: 0.8465, Recall: 0.8359, F1: 0.8349, Accuracy: 0.8360
+:   Fold 2 | Loss: 0.1791, Precision: 0.9400, Recall: 0.9416, F1: 0.9404, Accuracy: 0.9409
+:   Fold 3 | Loss: 0.3482, Precision: 0.8843, Recall: 0.8785, F1: 0.8794, Accuracy: 0.8790
+:   Fold 4 | Loss: 0.2442, Precision: 0.9121, Recall: 0.9122, F1: 0.9109, Accuracy: 0.9113
+:   Fold 5 | Loss: 0.3327, Precision: 0.9063, Recall: 0.8926, F1: 0.8949, Accuracy: 0.8949
+:   Average CV | Loss: 0.3098, Precision: 0.8978, F1: 0.8921, Accuracy: 0.8924, Recall: 0.8922
+:
+[[file:./images/ff486e609261cbd31e7d2ee2a6edd8bef0238037.png]]
+: Testing: lr=0.0001, batch_size=64, epochs=20
+:   Fold 1 | Loss: 0.2421, Precision: 0.9421, Recall: 0.9420, F1: 0.9408, Accuracy: 0.9409
+:   Fold 2 | Loss: 0.1244, Precision: 0.9631, Recall: 0.9638, F1: 0.9627, Accuracy: 0.9624
+:   Fold 3 | Loss: 0.1629, Precision: 0.9442, Recall: 0.9437, F1: 0.9439, Accuracy: 0.9435
+:   Fold 4 | Loss: 0.1113, Precision: 0.9599, Recall: 0.9599, F1: 0.9595, Accuracy: 0.9597
+:   Fold 5 | Loss: 0.2362, Precision: 0.9377, Recall: 0.9320, F1: 0.9321, Accuracy: 0.9326
+:   Average CV | Loss: 0.1754, Precision: 0.9494, F1: 0.9478, Accuracy: 0.9478, Recall: 0.9483
+:
+[[file:./images/02b93222ab775e69a3b05e009280c410d7d74df6.png]]
+: Testing: lr=0.0001, batch_size=64, epochs=30
+:   Fold 1 | Loss: 0.1617, Precision: 0.9570, Recall: 0.9568, F1: 0.9569, Accuracy: 0.9570
+:   Fold 2 | Loss: 0.1202, Precision: 0.9507, Recall: 0.9418, F1: 0.9444, Accuracy: 0.9462
+:   Fold 3 | Loss: 0.1325, Precision: 0.9545, Recall: 0.9527, F1: 0.9520, Accuracy: 0.9516
+:   Fold 4 | Loss: 0.1251, Precision: 0.9572, Recall: 0.9571, F1: 0.9571, Accuracy: 0.9570
+:   Fold 5 | Loss: 0.1710, Precision: 0.9492, Recall: 0.9454, F1: 0.9459, Accuracy: 0.9461
+:   Average CV | Loss: 0.1421, Precision: 0.9537, F1: 0.9513, Accuracy: 0.9516, Recall: 0.9508
+:
+[[file:./images/55c8397e6c3e0166e79bd575b792f109554cfb94.png]]
+** Best hyperparameters:
+  Learning rate: 0.0001
+  Batch size: 16
+  Epochs: 30
+  Average CV loss: 0.0751
+
+** Final Test Set Performance:
+: Final Test Set Performance:
+:   Loss:      0.0860
+:   Precision: 0.9758
+:   Recall:    0.9754
+:   F1:        0.9755
+:   Accuracy:  0.9757
+[[file:./images/ca3719f424adb091addd8983c6ace5bfa91725cf.png]]
+[[file:./images/99d2b9e999ab8b40495510cbfabe629f37fa4f41.png]]
+
+# M-x org-display-inline-images
