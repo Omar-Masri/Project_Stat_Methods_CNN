@@ -1,5 +1,5 @@
 #+PROPERTY: header-args:jupyter-python :session py :async
-#+title: notebook
+#+title: Notebook
 
 * Preamble
 
