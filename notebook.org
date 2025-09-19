@@ -20,25 +20,31 @@ import torch.optim as optim
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import Subset, DataLoader
+import torchvision
 from torchvision import datasets, transforms
 from torchvision.transforms import InterpolationMode
 import torchvision.utils as vutils
+from torchview import draw_graph
 
 #+END_SRC
+
+#+RESULTS:
 
 ** Constants
 #+BEGIN_SRC jupyter-python
 
 DEBUG = True
-RESET = True
+RESET = False
 
 IMG_H = IMG_W = 256
 RANDOM_SEED = 23                # mj
 K = 5
-STYLE_TOGGLE = False
+STYLE_TOGGLE = True
 TUNING_TOGGLE = False
 
 #+END_SRC
+
+#+RESULTS:
 
 ** Style
 #+BEGIN_SRC jupyter-python
@@ -76,6 +82,8 @@ else:                                   # Light used for report
 
 #+END_SRC
 
+#+RESULTS:
+
 ** Info & Reproducibility
 #+BEGIN_SRC jupyter-python
 
@@ -108,6 +116,11 @@ print("Dataset std:", std)
 
 #+END_SRC
 
+#+RESULTS:
+: Currently using: cuda
+: Dataset mean: tensor([0.3229, 0.5491, 0.2601])
+: Dataset std: tensor([0.2554, 0.1014, 0.1327])
+
 * Preprocessing and Architectures
 
 ** Transform
@@ -128,6 +141,8 @@ transform = transforms.Compose([
                         std=std)
 ])
 #+END_SRC
+
+#+RESULTS:
 
 ** Architectures
 
@@ -302,6 +317,8 @@ class CNN_Fourth(nn.Module):
         return x
 
 #+END_SRC
+
+#+RESULTS:
 
 * Training
 
@@ -602,6 +619,18 @@ print(f"Accuracy:  {accuracy:.4f}")
 
 #+END_SRC
 
+#+RESULTS:
+:RESULTS:
+[[file:./.ob-jupyter/5a0b81f1e020997a98b236ae0f7a134892b50fe5.png]]
+[[file:./.ob-jupyter/5f4384496ccb071d9f347f92fb97867ce21cfb03.png]]
+: Final Test Set Performance:
+: Loss:      0.0280
+: Precision: 0.9882
+: Recall:    0.9875
+: F1:        0.9877
+: Accuracy:  0.9878
+:END:
+
 ** Generalization
 
 #+BEGIN_SRC jupyter-python
@@ -665,8 +694,6 @@ plt.show()
 ** Plot Architectures
 
 #+BEGIN_SRC jupyter-python
-import torchvision
-from torchview import draw_graph
 
 model_graph = draw_graph(CNN_Fourth(), input_size=(1,3,256,256))
 model_graph.visual_graph
@@ -679,7 +706,3 @@ model_graph.visual_graph
 if RESET:
 	%reset
 #+END_SRC
-
-#+RESULTS:
-:results:
-:end:

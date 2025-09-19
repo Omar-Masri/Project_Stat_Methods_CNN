@@ -2,10 +2,8 @@ myenv/
 Generalize_Hands/
 rock/
 paper/
-scissors
+scissors/
 .auctex-auto/
-.ob-jupyter/
-
 
 *.xml
 *.bib
